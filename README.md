@@ -1,4 +1,4 @@
-# template1
+# Nuxtjs - Boostrap Template
 
 > Nuxt.js Template ready to be deployed
 
