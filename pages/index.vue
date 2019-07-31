@@ -78,6 +78,7 @@
           <div class="testo secTitle">contacts</div>
         </div>
         </SectionV>
+        <Footer />
     </div>
 </template>
 
@@ -85,6 +86,7 @@
 import SectionV from '@/components/SectionV'
 import BurgerM from '@/components/BurgerM'
 import Aos from '@/components/Aos'
+import Footer from '@/components/Footer'
 
 export default {
     data: () => {
@@ -112,7 +114,8 @@ export default {
     components: {
         SectionV,
         BurgerM,
-        Aos
+        Aos,
+        Footer
     },
     created() {
       this.fetch();

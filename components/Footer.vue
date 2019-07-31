@@ -1,11 +1,11 @@
-
 <template>
     <div>
-        <footer class="mastfoot mt-auto" v-if="footer">
-    <div class="inner">
-    <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-    </div>
-</footer> 
+        <div class="mastfoot mt-auto inner text-center">
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+        <p>Website by:</p>
+        <a href="">Giampaolo Fois</a>
+        <p>2019</p>
+        </div>
     </div>
 </template>
 
