@@ -31,25 +31,30 @@
           <div class="vl"></div>
         </div>
         <div class="row text-uppercase">
-          <div class="testo secTitle blTitle">PORTFOLIO</div>
+          <div class="testo secTitle blTitle">PRODUCTIONS</div>
         </div>
         
         </SectionV>
         <!-- GALLERY -->       
-        <SectionV :center="true" alignItem="baseline"
+        <!-- <SectionV :center="true" alignItem="baseline"
         id="gallery"> 
             <Aos />
-        </SectionV>
+        </SectionV> -->
         <!-- STAFF -->      
-        <SectionV id="staff" backgroundColor="white" alignItem="baseline" :center="true">
+        <SectionV id="staff" alignItem="baseline" :center="true">
         <div class="row text-uppercase">
-          <div class="testo secTitle blTitle">Staff</div>
+          <div class="testo secTitle blTitle">PORTFOLIO</div>
         </div>
         </SectionV>
         <!-- CONTACT -->     
+        <SectionV id="gallery" :center="true" backgroundColor="white" alignItem="baseline">
+          <div class="row text-uppercase">
+          <div class="testo secTitle">GALLERY</div>
+        </div>
+        </SectionV>
         <SectionV id="contact" :center="true" alignItem="baseline">
           <div class="row text-uppercase">
-          <div class="testo secTitle">contacts</div>
+          <div class="testo secTitle">CONTACTS</div>
         </div>
         </SectionV>
         <Footer />
