@@ -9,7 +9,7 @@
             :class="{ 'is-active' : burger,
             'hamburger': true, 
             'hamburger--emphatic' : true }"
-            @click="burger = !burger"
+            @click="toggle()"
             tabindex="0"
             aria-label="Menu"
             role="button" 
@@ -20,7 +20,7 @@
                 </div>
             </div>
 
-            <div class="inner rounded animated slideInRight" v-if="burger">
+           <!--  <div class="inner rounded animated slideInRight" v-if="burger">
             <nav class="nav flex-column nav-masthead animated slideInRight">
                 <a class="nav-link" 
                 v-for="(elem, index) in navItems"
@@ -28,12 +28,13 @@
                 href=""
                 v-scroll-to="elem.link">{{elem.name}}</a>
             </nav>
-            </div>
+            </div> -->
         </header> 
     </div>
 </template>
 
 <script>
+import {mapMutations} from 'vuex'
 export default {
     data: () => {
         return {
@@ -41,7 +42,16 @@ export default {
             burger: false
         }
     },
-    props: ['navItems']
+    props: ['navItems'],
+    methods: {
+      openMenu(){
+        this.$store.mutations.menuChanges(true);
+      },
+      ...mapMutations({
+      toggle: 'menuStore/menuChanges'
+
+    })
+    }
 }
 </script>
 

@@ -3,12 +3,13 @@
         <BurgerM 
         :navItems='navItems'
         />
+        <MainMenu />
         <!-- HOME -->
         <SectionV :center="true"
         backgroundColor="transparent"
         id="home"> 
             <h1 class="cover-heading testo">SENTENCE 1</h1>
-           
+           <input type="button" value="Test" />
             <video
             muted
             loop
@@ -87,6 +88,7 @@ import SectionV from '@/components/SectionV'
 import BurgerM from '@/components/BurgerM'
 import Aos from '@/components/Aos'
 import Footer from '@/components/Footer'
+import MainMenu from '@/components/menu/MainMenu'
 
 export default {
     data: () => {
@@ -115,7 +117,8 @@ export default {
         SectionV,
         BurgerM,
         Aos,
-        Footer
+        Footer,
+        MainMenu
     },
     created() {
       this.fetch();

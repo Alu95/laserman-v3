@@ -1,11 +1,6 @@
 
 module.exports = {
   mode: 'universal',
-  /*
-  ** Headers of the page
-  < meta name = ""
-  content = "" > < /meta>
-  */
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -27,12 +22,17 @@ module.exports = {
   },
   server: {
     port: 3001, // default: 3000
-    host: '0.0.0.0', // default: localhost
+    host: 'localhost', // default: localhost
   },
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
+  router: {
+    middleware: [
+      'store',
+    ]
+  },
   /*
   ** Global CSS
   */
